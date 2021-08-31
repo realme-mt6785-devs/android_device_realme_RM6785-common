@@ -1588,7 +1588,6 @@ vendor/etc/public.libraries.txt
 -vendor/bin/ccci_rpcd
 -vendor/bin/charon
 -vendor/bin/epdg_wod
--vendor/bin/factory
 -vendor/bin/gsm0710muxd
 -vendor/bin/ipsec_mon
 -vendor/bin/md_monitor
@@ -1729,7 +1728,6 @@ vendor/etc/ecc_list_OP17.xml
 vendor/etc/ecc_list_OP18.xml
 vendor/etc/ecc_list_OP20.xml
 vendor/etc/ecc_list_preference.xml
-vendor/etc/factory.ini
 vendor/etc/smsdbvisitor.xml
 vendor/etc/special_pws_channel.xml
 vendor/etc/spn-conf-op09.xml
