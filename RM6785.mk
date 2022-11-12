@@ -52,7 +52,8 @@ PRODUCT_PACKAGES += \
     libpng.vendor:64
 
 PRODUCT_PACKAGES += \
-    libshim_camera_metadata
+    libshim_camera_metadata \
+    libshim_utils
 
 # ConfigStore
 PRODUCT_PACKAGES += \

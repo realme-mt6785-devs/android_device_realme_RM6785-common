@@ -62,6 +62,10 @@ function blob_fixup {
             [ "$2" = "" ] && return 0
             grep -q "liblog.so" "${2}" || "${PATCHELF_0_17_2}" --add-needed "liblog.so" "${2}"
             ;;
+        vendor/lib64/libcam.halsensor.so)
+            [ "$2" = "" ] && return 0
+             grep -q "libshim_utils.so" "$2" || "$PATCHELF" --add-needed "libshim_utils.so" "$2"
+            ;;
         vendor/lib64/libmtkcam_stdutils.so)
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v30.so" "$2"
             ;;
