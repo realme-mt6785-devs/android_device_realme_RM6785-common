@@ -79,3 +79,10 @@ prebuilt_etc {
     filename_from_src: true,
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "ueventd.RM6785.rc",
+    src: "etc/ueventd.RM6785.rc",
+    filename: "ueventd.rc",
+    device_specific: true,
+}

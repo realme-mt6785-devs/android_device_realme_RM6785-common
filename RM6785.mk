@@ -122,7 +122,8 @@ PRODUCT_PACKAGES += \
     init.project.rc \
     init.sensor_1_0.rc \
     init.RM6785.rc \
-    ueventd.mtk.rc
+    ueventd.mtk.rc \
+    ueventd.RM6785.rc
 
 PRODUCT_PACKAGES += \
     init_RM6785_vendor
@@ -142,6 +143,10 @@ PRODUCT_PACKAGES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.RM6785
+
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
 
 # Media
 PRODUCT_COPY_FILES += \
