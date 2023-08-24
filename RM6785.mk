@@ -347,8 +347,9 @@ PRODUCT_PACKAGES += \
     WifiOverlayRM6785 \
     hostapd \
     wpa_supplicant \
-    android.hardware.wifi-service.RM6785
+    android.hardware.wifi-service-lazy
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
+    $(LOCAL_PATH)/configs/wifi/vendor_hals.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_hals/vendor_hals.xml \
     $(LOCAL_PATH)/configs/wifi/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg
