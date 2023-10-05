@@ -1778,7 +1778,7 @@ etc/init/init.vtservice.rc|abcbc3ffc316b8f1cedffa949aac3b46670d64bc
 -lib64/libmtk_vt_wrapper.so|63fff84c494281b02b362706ea9495aa12fbd0d1
 -lib64/libmtkavenhancements.so|24237b8f7c835696d3147c66464316b1ec5e84ae
 -lib64/libsignal.so|305fff9001375c02fb8c41967666eb51bb14d478
--lib64/libsink.so|df2585e4acd91613e29e93bef6a25855d296bbb2
+-lib64/libsink.so|0a7b4b83e6a3607a409a59bdf4bb871149ae8075
 -lib64/libsource.so|407a73931c1dbe8bd16ceca664099b5bd77e4769
 -lib64/libvcodec_cap.so|3d3a52317bd310c416343538ad926bec1255b8b0
 -lib64/libvcodec_capenc.so|af8696e84defd1b0b20b16ef9b664cc7c58d9d0d

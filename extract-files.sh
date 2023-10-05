@@ -23,6 +23,9 @@ source "${HELPER}"
 
 function blob_fixup {
     case "$1" in
+        lib64/libsink.so)
+            grep -q "libshim_vtservice.so" "$2" || "$PATCHELF" --add-needed "libshim_vtservice.so" "$2"
+            ;;
         product/etc/permissions/com.android.hotwordenrollment.common.util.xml)
             sed -i 's/my_product/product/' "$2"
             ;;
