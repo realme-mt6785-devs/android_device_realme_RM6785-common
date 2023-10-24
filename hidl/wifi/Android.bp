@@ -1,0 +1,34 @@
+//
+// Copyright (C) 2023 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_binary {
+    name: "android.hardware.wifi-service.RM6785",
+    vintf_fragments: ["android.hardware.wifi-service.RM6785.xml"],
+    relative_install_path: "hw",
+    proprietary: true,
+    cppflags: [
+        "-Wall",
+        "-Werror",
+        "-Wextra",
+    ],
+    include_dirs: ["frameworks/opt/net/wifi/libwifi_hal/include"],
+    header_libs: ["libhardware_legacy_headers"],
+    srcs: ["service.cpp"],
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "libcutils",
+        "liblog",
+        "libnl",
+        "libutils",
+        "libwifi-hal-mtk",
+        "libwifi-system-iface",
+        "libxml2",
+        "android.hardware.wifi-V1-ndk",
+    ],
+    static_libs: ["android.hardware.wifi-service-lib"],
+    init_rc: ["android.hardware.wifi-service.RM6785.rc"],
+}
