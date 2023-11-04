@@ -1,6 +1,9 @@
 # AAL
 ro.vendor.mtk_aal_support=1
 
+# APK Verity
+ro.apk_verity.mode=2
+
 # Audio
 ro.config.alarm_vol_steps=15
 ro.config.vc_call_vol_steps=15
