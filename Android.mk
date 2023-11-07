@@ -11,6 +11,4 @@ ifneq ($(filter RMX2001L1 RMX2151L1,$(TARGET_DEVICE)),)
   $(foreach mk,$(subdir_makefiles),$(info including $(mk) ...)$(eval include $(mk)))
 
 include $(CLEAR_VARS)
-include external/wpa_supplicant_8/hostapd/Android.mk
-
 endif

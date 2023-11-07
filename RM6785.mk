@@ -346,10 +346,8 @@ PRODUCT_PACKAGES += \
     TetheringConfigOverlayRM6785 \
     WifiOverlayRM6785 \
     hostapd \
-    android.hardware.wifi-service.RM6785 \
-    android.hardware.wifi.supplicant@1.3.vendor:64 \
-    libkeystore-engine-wifi-hidl:64 \
-    libkeystore-wifi-hidl:64
+    wpa_supplicant \
+    android.hardware.wifi-service.RM6785
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \

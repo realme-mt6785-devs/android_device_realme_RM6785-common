@@ -1923,14 +1923,11 @@ odm/firmware/fastchg/19661/oplus_vooc_fw.bin
 odm/firmware/fastchg/20682/oplus_vooc_fw.bin
 
 # Wifi
--vendor/bin/hw/wpa_supplicant
 -vendor/bin/stp_dump3
 -vendor/bin/wfca
 -vendor/bin/wlan_assistant
 -vendor/bin/wmt_launcher
 -vendor/bin/wmt_loader
--vendor/bin/wpa_cli
-vendor/etc/init/android.hardware.wifi.supplicant-service.rc
 vendor/etc/init/init.wfca.rc
 vendor/etc/init/init.wlan_drv.rc
 vendor/etc/init/init.wmt_drv.rc
@@ -1940,13 +1937,7 @@ vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/wpa_supplicant.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 -vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
--vendor/lib64/libwapi.so
 -vendor/lib64/libwifitest.so
--vendor/lib64/libwpa_client.so
--vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so
--vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so
--vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.2.so
--vendor/lib64/vendor.oplus.hardware.wifi.supplicant@2.0.so
 
 # Wifi (Firmware)
 vendor/firmware/WIFI_RAM_CODE_soc1_0_2a_1.bin
