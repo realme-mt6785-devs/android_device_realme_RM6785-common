@@ -1,10 +1,10 @@
 #
-# Copyright (C) 2021-2022 The LineageOS Project
+# Copyright (C) 2021-2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/realme/RM6785
+DEVICE_PATH := device/realme/RM6785-common
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6785

@@ -1,4 +1,4 @@
 hidl_package_root {
     name: "vendor.oplus.hardware",
-    path: "device/realme/RM6785/interfaces",
+    path: "device/realme/RM6785-common/interfaces",
 }
