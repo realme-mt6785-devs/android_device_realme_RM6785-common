@@ -1761,37 +1761,28 @@ framework/mediatek-ims-legacy.jar
 vendor/etc/vintf/manifest/oplus_appradio_device_manifest.xml
 vendor/etc/vintf/manifest/oplus_radio_device_manifest.xml
 
-# Radio (Video Telephony) - from RMX2151_11_F.01
--bin/vtservice|75eeb851d490ea9bc20c182ffa2b0a76f871a32d
-etc/init/init.vtservice.rc|abcbc3ffc316b8f1cedffa949aac3b46670d64bc
--lib/libmtk_vt_wrapper.so|f83f677349f369dbe52a310250b93bf66993652e
--lib/libmtkavenhancements.so|675c10ceb669661fcd9fcb7f1f4001a641c4dbd0
--lib/libvcodec_cap.so|829cd1d4f0e73fbefd38e4818896f162f7e10472
--lib/libvcodec_capenc.so|24d1236c6027f07b2a258410aa9a331d68c56112
--lib/libvsim-adaptor-client.so|7bbcbe504de8b115b6bc5e0d7b16c62769885c6e
--lib64/libcomutils.so|2c690f9b35b3d2ef0ec63223cded9eb2ba98655c
--lib64/libimsma.so|e13d8087b6a5f83a40ee60c1f50d50ab0c9be044
--lib64/libimsma_adapt.so|ea34a1a7fdfaa68e10a4811e1a93a7b51432de13
--lib64/libimsma_rtp.so|436b6ac193501c0ce9538e97c45c2f67e78f5381
--lib64/libimsma_socketwrapper.so|8287ea961714a9fb34f9661bba026014a392e199
--lib64/libmtk_vt_service.so|aab169313bb8dffe44747c7bdbf5ebb33c75b91c
--lib64/libmtk_vt_wrapper.so|63fff84c494281b02b362706ea9495aa12fbd0d1
--lib64/libmtkavenhancements.so|24237b8f7c835696d3147c66464316b1ec5e84ae
--lib64/libsignal.so|305fff9001375c02fb8c41967666eb51bb14d478
--lib64/libsink.so|0a7b4b83e6a3607a409a59bdf4bb871149ae8075
--lib64/libsource.so|407a73931c1dbe8bd16ceca664099b5bd77e4769
--lib64/libvcodec_cap.so|3d3a52317bd310c416343538ad926bec1255b8b0
--lib64/libvcodec_capenc.so|af8696e84defd1b0b20b16ef9b664cc7c58d9d0d
--lib64/libvsim-adaptor-client.so|fdcf8028addf9cf2b5b3f7edc5a3b42de1d025ea
--lib64/libvt_avsync.so|ed7fdbc2e17d83aa6399c8b6eb8dfa7e32ecd25e
--system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE=vendor.mediatek.hardware.videotelephony@1.0.system_ext|abd2d0eda09ac9a0d9e315dec5e6584a247117e9
--system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE=vendor.mediatek.hardware.videotelephony@1.0.system_ext|ea38843255d76296cd67d53be192472c42edcdaa
--vendor/bin/hw/vtservice_hidl|9a91433ec044fd6d05e4c30e17495691648a49ba
+# Radio (Video Telephony) - from TECNO-U-64-ARMV82-230626V601DevT
+-system_ext/bin/vtservice|59adc81ee1ad1f3fb4942cd6e8e7100325002eb2
+system_ext/etc/init/init.vtservice.rc|50a2249906edc06059b443513db47a2ddc0490dc
+-system_ext/lib64/libcomutils.so|6d9cd979f33ef01cb26861a38a59e76e1c2a3acb
+-system_ext/lib64/libimsma.so|932cbe88083fae23b159bf0e3fe17d7efb93495b
+-system_ext/lib64/libimsma_adapt.so|754ad1c39fb4dba9d3eb69ac00112e7600d68580
+-system_ext/lib64/libimsma_rtp.so|20ee91f090661fb26e6625ad2fef828441956b82
+-system_ext/lib64/libimsma_socketwrapper.so|1f9b83322c41e5b0a7b3130f74a38ddb14f578d8
+-system_ext/lib64/libmtk_vt_service.so|302d3ab3c5b3fa0107520fe36098b32cd0a8dd96
+-system_ext/lib64/libmtk_vt_wrapper.so|af4d486c516c920ea99c362aebbf04180e96035c
+-system_ext/lib64/libsignal.so|0f55bb64c660fe4cda2b695121580b054f026e73
+-system_ext/lib64/libsink.so|6bd8c55847116a9a37e223ea2a6e5ce1379e53f7
+-system_ext/lib64/libsource.so|66a481fd2e260a820899d60cf9190fb986d36768
+-system_ext/lib64/libvcodec_cap.so|6973253cb2e4ddf365451ed2ac8db9d04085bc4a
+-system_ext/lib64/libvcodec_capenc.so|5527525dfcd25169bc380ac53d8181ffa1429c6f
+-system_ext/lib64/libvt_avsync.so|632cb05532ef2e022072d91bff3c1ae47c888b7e
+-system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so|fc3f645734d4e37fa50b77233d63c7b2eb166014
+-system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE=vendor.mediatek.hardware.videotelephony@1.0.system_ext|aee568e770a3835af2df2262c9dc8bb2911da324
+-vendor/bin/hw/vtservice_hidl|047b26f80b338b7d0869840d243eefebe82d56f5
 vendor/etc/init/init.vtservice_hidl.rc|f2e992214ed5bb99c2c2a135cf1f0996dba8a8a0
--vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so|63c63b4bf1fa380678e8c7da86f44fd76cc8e870
--vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so|2327f38bdc7eb60e36aa8ff892667f3764c5e574
--vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so|1d071b1e06896e1cdf65077b8cf3f6568222b9be
--vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|099ec746d66f26eea9220465a2f6d0a3c2474666
+-vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so|bb9ff554802e7bffb72cf24604109dafcf0019fc
+-vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|5e228669d2c575e38fc02a13404f31bc22494b87
 
 # Seccomp
 vendor/etc/seccomp_policy/mediacodec.policy
