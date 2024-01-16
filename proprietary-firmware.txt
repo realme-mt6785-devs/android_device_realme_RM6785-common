@@ -1,0 +1,19 @@
+# Unpinned blobs from RMX2002_11.C.19.
+
+audio_dsp.img
+cam_vpu1.img
+cam_vpu2.img
+cam_vpu3.img
+cdt_engineering.img
+dtbo.img
+gz.img
+logo.bin
+md1img.img
+preloader_ufs.img
+scp.img
+spmfw.img
+sspm.img
+tee.img
+
+# Prevent lk from setting sku prop: sed -i 's/sku/fku/' lk.img
+lk.img|582aa0e251f9c5624a5ec48c0cafca4cd3331432
