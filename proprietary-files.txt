@@ -1916,8 +1916,6 @@ vendor/firmware/gt9886_firmware_6785ae.bin
 -vendor/lib64/libudf.so|66324571c3f69057b250bce3b0d58c386da0c25b
 
 # USB
--vendor/bin/hw/android.hardware.usb@1.1-service-mediatek
-vendor/etc/init/android.hardware.usb@1.1-service-mediatek.rc
 vendor/etc/default_pd_calibration.bin
 
 # Vooc (Firmware)
