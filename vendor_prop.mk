@@ -93,6 +93,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.NetLnkEventHdlr=$(VENDOR_LOG_LEVEL_I) \
     persist.log.tag.NetworkPolicy=$(VENDOR_LOG_LEVEL_I) \
     persist.log.tag.NetworkStats=$(VENDOR_LOG_LEVEL_I) \
+    persist.log.tag.OpenGLRenderer=$(VENDOR_LOG_LEVEL_I) \
     persist.log.tag.OperatorUtils=$(VENDOR_LOG_LEVEL_I) \
     persist.log.tag.Phone=$(VENDOR_LOG_LEVEL_I) \
     persist.log.tag.PhoneConfigurationSettings=$(VENDOR_LOG_LEVEL_I) \
