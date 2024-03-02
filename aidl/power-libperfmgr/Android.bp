@@ -1,0 +1,44 @@
+//
+// Copyright (C) 2021 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_binary {
+    name: "android.hardware.power-service.RM6785-libperfmgr",
+
+    relative_install_path: "hw",
+
+    shared_libs: [
+        "android.hardware.power-V2-ndk",
+        "libbase",
+        "libbinder_ndk",
+        "libcutils",
+        "libdl",
+        "liblog",
+        "libperfmgr",
+        "libprocessgroup",
+        "libutils",
+        "pixel-power-ext-V1-ndk",
+    ],
+
+    srcs: [
+        "service.cpp",
+        "InteractionHandler.cpp",
+        "Power.cpp",
+        "PowerExt.cpp",
+        "PowerHintSession.cpp",
+        "PowerSessionManager.cpp",
+    ],
+
+    cflags: [
+        "-Wno-unused-parameter",
+        "-Wno-unused-variable",
+    ],
+
+    init_rc: ["android.hardware.power-service.RM6785-libperfmgr.rc"],
+
+    vendor: true,
+    vintf_fragments: ["android.hardware.power-service.RM6785.xml"],
+
+}

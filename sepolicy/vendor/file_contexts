@@ -2,6 +2,7 @@
 /(vendor|odm)/bin/hw/vendor\.oplus\.hardware\.biometrics\.fingerprint@[0-9]\.[0-9]-service                u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@[0-9]\.[0-9]-service\.RM6785    u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service.RM6785                                    u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.RM6785-libperfmgr                        u:object_r:hal_power_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.wifi-service\.RM6785                                    u:object_r:hal_wifi_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@[0-9]\.[0-9]-service\.RM6785                        u:object_r:hal_lineage_touch_default_exec:s0
 

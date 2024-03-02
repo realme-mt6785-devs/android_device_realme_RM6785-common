@@ -239,7 +239,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.mediatek-libperfmgr \
+    android.hardware.power-service.RM6785-libperfmgr \
     android.hardware.power@1.2.vendor:64
 
 PRODUCT_PACKAGES += \

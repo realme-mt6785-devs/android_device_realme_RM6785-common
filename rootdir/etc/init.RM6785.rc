@@ -22,9 +22,6 @@ on post-fs-data
     mkdir /data/vendor/audiohal/audio_param 0771 system audio
 
 on property:sys.boot_completed=1
-    # Power HAL
-    setprop vendor.mediatek.powerhal.init 1
-
     # ZRAM
     swapon_all /vendor/etc/fstab.mt6785
 
