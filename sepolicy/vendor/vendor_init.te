@@ -1,6 +1,5 @@
 allow vendor_init proc_tp:file rw_file_perms;
 allow vendor_init proc_fastchg_fw:file rw_file_perms;
-allow vendor_init proc_dirty:file rw_file_perms;
 allow vendor_init proc_sched:file rw_file_perms;
 allow vendor_init sysfs_otg_switch:file rw_file_perms;
 
