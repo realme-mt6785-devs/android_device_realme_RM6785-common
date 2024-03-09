@@ -304,6 +304,13 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl:32
 
+# Symlinks
+PRODUCT_PACKAGES += \
+    kmsetkey_symlink \
+    libGLES_mali_symlink \
+    libMcGatekeeper_symlink \
+    libSoftGatekeeper_symlink
+
 # Telephony
 PRODUCT_BOOT_JARS += \
     mediatek-common \
