@@ -5,31 +5,3 @@ soong_namespace {
         "vendor/realme/RM6785-common",
     ],
 }
-
-install_symlink {
-    name: "kmsetkey_symlink",
-    installed_location: "lib64/hw/kmsetkey.default.so",
-    symlink_target: "kmsetkey.trustonic.so",
-    vendor: true,
-}
-
-install_symlink {
-    name: "libGLES_mali_symlink",
-    installed_location: "lib64/hw/vulkan.mt6785.so",
-    symlink_target: "../egl/libGLES_mali.so",
-    vendor: true,
-}
-
-install_symlink {
-    name: "libMcGatekeeper_symlink",
-    installed_location: "lib64/hw/gatekeeper.mt6785.so",
-    symlink_target: "../libMcGatekeeper",
-    vendor: true,
-}
-
-install_symlink {
-    name: "libSoftGatekeeper_symlink",
-    installed_location: "lib64/hw/gatekeeper.default.so",
-    symlink_target: "../libSoftGatekeeper",
-    vendor: true,
-}
