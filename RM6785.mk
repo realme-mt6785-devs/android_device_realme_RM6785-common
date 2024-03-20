@@ -4,9 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
 # Call proprietary blob setup
 $(call inherit-product, vendor/realme/RM6785-common/RM6785-common-vendor.mk)
 
