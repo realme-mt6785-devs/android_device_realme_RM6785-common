@@ -345,11 +345,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     TetheringConfigOverlayRM6785 \
     WifiOverlayRM6785 \
+    libwifi-hal-wrapper \
     hostapd \
     wpa_supplicant \
     android.hardware.wifi-service-lazy
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
-    $(LOCAL_PATH)/configs/wifi/vendor_hals.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_hals/vendor_hals.xml \
     $(LOCAL_PATH)/configs/wifi/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg
