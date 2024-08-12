@@ -1059,8 +1059,8 @@ vendor/firmware/soc1_0_patch_mcu_2a_1_hdr.bin
 vendor/firmware/soc1_0_ram_mcu_2a_1_hdr.bin
 vendor/firmware/soc1_0_ram_wifi_2a_1_hdr.bin
 
-# Connectivity (Firmware) - from A145PXXU1AWA3
-vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin:vendor/firmware/soc1_0_ram_bt_2a_1_hdr.bin|9cd0d79cde76a59ddd8545b1621af1176c5f9605
+# Connectivity (Firmware) - from A055FXXS5CXG1
+vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin:vendor/firmware/soc1_0_ram_bt_2a_1_hdr.bin|8c5d8e93ad8a03c6de5aaaad8ef58d53e75c8378
 
 # Dplanner
 -vendor/bin/hw/vendor.mediatek.hardware.dplanner@2.0-service
