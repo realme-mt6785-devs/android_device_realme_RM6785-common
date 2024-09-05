@@ -76,6 +76,9 @@ function blob_fixup {
         vendor/lib64/libcam.utils.sensorprovider.so)
             grep -q "libshim_sensors.so" "$2" || "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
             ;;
+        vendor/lib/mediadrm/libwvdrmengine.so|vendor/lib/libwvhidl.so)
+            "$PATCHELF" --replace-needed "libcrypto.so" "libcrypto_v33.so" "$2"
+            ;;
     esac
 }
 
