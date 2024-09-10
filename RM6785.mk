@@ -66,6 +66,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     android.hardware.drm@1.3.vendor:32 \
+    libcrypto_shim \
     libdrm.vendor \
     libmockdrmcryptoplugin
 
@@ -335,7 +336,6 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    libcrypto_v33 \
     libmedia_helper-v30 \
     libutils-v32 \
     libutils-v30 \

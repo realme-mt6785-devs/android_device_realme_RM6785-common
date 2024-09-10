@@ -40,6 +40,10 @@ function blob_fixup {
         vendor/lib64/hw/vendor.mediatek.hardware.pq@2.6-impl.so)
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
             ;;
+        vendor/lib/mediadrm/libwvdrmengine.so | vendor/lib/libwvhidl.so)
+            [ "$2" = "" ] && return 0
+            grep -q libcrypto_shim.so "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
+            ;;
         vendor/lib/hw/audio.primary.mt6785.so)
             "$PATCHELF" --replace-needed "libmedia_helper.so" "libmedia_helper-v30.so" "$2"
             "$PATCHELF" --replace-needed "libalsautils.so" "libalsautils-v30.so" "$2"
@@ -75,9 +79,6 @@ function blob_fixup {
         vendor/lib64/libaalservice.so|\
         vendor/lib64/libcam.utils.sensorprovider.so)
             grep -q "libshim_sensors.so" "$2" || "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
-            ;;
-        vendor/lib/mediadrm/libwvdrmengine.so|vendor/lib/libwvhidl.so)
-            "$PATCHELF" --replace-needed "libcrypto.so" "libcrypto_v33.so" "$2"
             ;;
     esac
 }
