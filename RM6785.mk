@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2024 The LineageOS Project
+# Copyright (C) 2021-2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -27,9 +27,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
     audio.bluetooth.default \
     audio.r_submix.default \
-    audio.usb.default \
-    libtinycompress \
-    libtinyxml
+    audio.usb.default
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -43,18 +41,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor:64
 
-# Camera
-PRODUCT_PACKAGES += \
-    android.hardware.camera.common@1.0.vendor:64 \
-    android.hardware.camera.device@3.6.vendor:64 \
-    android.hardware.camera.provider@2.6.vendor:64 \
-    libexpat.vendor:64 \
-    libpng.vendor:64
-
-PRODUCT_PACKAGES += \
-    libshim_camera_metadata \
-    libshim_utils
-
 # ConfigStore
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -65,11 +51,7 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey \
-    android.hardware.drm@1.3.vendor:32 \
-    libcrypto_shim \
-    libdrm.vendor \
-    libmockdrmcryptoplugin
+    android.hardware.drm-service.clearkey
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -82,33 +64,17 @@ PRODUCT_PACKAGES += \
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl:64 \
-    android.hardware.gatekeeper@1.0-service \
-    libgatekeeper.vendor:64
-
-# GPS
-PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.1.vendor:64 \
-    libcurl.vendor:32
+    android.hardware.gatekeeper@1.0-service
 
 # Graphics
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.1-service \
-    libion.vendor \
-    libui.vendor
+    android.hardware.graphics.composer@2.1-service
 
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
-
-# HIDL
-PRODUCT_PACKAGES += \
-    android.hidl.allocator@1.0.vendor \
-    libhidltransport \
-    libhidltransport.vendor \
-    libhwbinder.vendor \
-    libhidlmemory.vendor:64
 
 # Init
 PRODUCT_PACKAGES += \
@@ -133,13 +99,11 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    libkeymaster4.vendor:64 \
     libkeymaster4support.vendor:64 \
     libkeymaster_portable.vendor:64 \
     libkeymaster_messages.vendor:64 \
     libsoft_attestation_cert.vendor:64 \
-    libpuresoftkeymasterdevice.vendor:64 \
-    libnetutils.vendor:64
+    libpuresoftkeymasterdevice.vendor:64
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -154,10 +118,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek-mali
 
-# Neutral Networks
-PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.3.vendor:64
-
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
@@ -168,6 +128,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf \
     $(LOCAL_PATH)/configs/nfc/nfc_features.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/nfc_features.xml
+
+# Neutral Networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor:64
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -235,16 +199,13 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.pixel-libperfmgr \
-    android.hardware.power@1.2.vendor:64
+    android.hardware.power-service.pixel-libperfmgr
 
 PRODUCT_PACKAGES += \
     libmtkperf_client_vendor \
     libmtkperf_client
 
 PRODUCT_PACKAGES += \
-    vendor.mediatek.hardware.mtkpower@1.0.vendor \
-    vendor.mediatek.hardware.mtkpower@1.1.vendor \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub
 
 PRODUCT_COPY_FILES += \
@@ -262,12 +223,6 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat
 
-# Radio
-PRODUCT_PACKAGES += \
-    android.hardware.radio@1.5.vendor:64 \
-    android.hardware.radio.config@1.2.vendor:64 \
-    android.hardware.radio.deprecated@1.0.vendor:64
-
 # RcsService
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
@@ -277,18 +232,6 @@ PRODUCT_PACKAGES += \
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.mt6785.rc
-
-# Secure element
-PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.2.vendor:64
-
-# Sensors
-PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.0.vendor:64 \
-    android.frameworks.sensorservice@1.0.vendor \
-    libsensorndkbridge \
-    libpower.vendor:64 \
-    libshim_sensors
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -312,10 +255,6 @@ PRODUCT_BOOT_JARS += \
     mediatek-telephony-base \
     mediatek-telephony-common \
 
-# Textclassifier
-PRODUCT_PACKAGES += \
-    libtextclassifier_hash.vendor:64
-
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.mediatek
@@ -331,23 +270,13 @@ PRODUCT_SOONG_NAMESPACES += bootable/deprecated-ota
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek-legacy
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libui-v32
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek
-
-# VNDK
-PRODUCT_PACKAGES += \
-    libmedia_helper-v30 \
-    libutils-v32 \
-    libutils-v30 \
-    libui-v32
-
-PRODUCT_PACKAGES += \
-    libunwindstack.vendor \
-    libutilscallstack.vendor
-
-PRODUCT_PACKAGES += \
-    libshim_ui
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
