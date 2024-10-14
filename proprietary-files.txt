@@ -12,7 +12,7 @@
 -vendor/lib/hw/audio.r_submix.mt6785.so
 -vendor/lib/hw/audio.usb.mt6785.so
 -vendor/lib/hw/sound_trigger.primary.mt6785.so
--vendor/lib/libalsautils.so:vendor/lib/libalsautils-v30.so
+-vendor/lib/libalsautils.so:vendor/lib/libalsautils-v30.so;FIX_SONAME
 -vendor/lib/libMtkSpeechEnh.so
 -vendor/lib/lib_iir.so
 -vendor/lib/lib_speech_enh.so
@@ -45,7 +45,7 @@
 -vendor/lib/libmtkshifter_vendor.so
 -vendor/lib/liboplus_audio_config.so
 -vendor/lib/libsi_sixth.so
--vendor/lib/libspeech_enh_lib.so
+-vendor/lib/libspeech_enh_lib.so;FIX_SONAME
 -vendor/lib/libspeechparser_vendor.so
 -vendor/lib/libvow_ap_testing_alexa.vendor.so
 -vendor/lib/libvowp23_sid_testing_alexa.vendor.so
@@ -863,9 +863,9 @@ vendor/etc/init/camerahalserver.rc
 -vendor/lib64/libmtkcam_ulog.so
 -vendor/lib64/libmtkisp_metadata.so
 -vendor/lib64/libocam_common.so
--vendor/lib64/liboppo_aisd.so
+-vendor/lib64/liboppo_aisd.so;FIX_SONAME
 -vendor/lib64/liboppo_arcSoftBokehEngine_new.so
--vendor/lib64/liboppo_blank_algo.so
+-vendor/lib64/liboppo_blank_algo.so;FIX_SONAME
 -vendor/lib64/liboppo_platform_hwi.so
 -vendor/lib64/libstereoinfoaccessor_vsdof.so
 -vendor/lib64/libstface_fd_api.so
@@ -1939,7 +1939,7 @@ vendor/etc/vintf/manifest/manifest.xml
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/wpa_supplicant.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
--vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
+-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
 -vendor/lib64/libwifitest.so
 
 # Wifi (Firmware)
