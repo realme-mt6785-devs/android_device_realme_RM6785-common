@@ -1114,7 +1114,7 @@ vendor/firmware/em_filter_1_ulwctg_n.bin
 # Fingerprint
 -odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
--odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so;MODULE=vendor.oplus.hardware.biometrics.fingerprint@2.1.odm
+-odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so;MODULE_SUFFIX=_odm
 -odm/lib64/vendor.oplus.hardware.biometrics.fingerprintservice@1.0.so
 
 # FM (Firmware)
