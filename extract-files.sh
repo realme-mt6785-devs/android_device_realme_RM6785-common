@@ -51,8 +51,16 @@ function blob_fixup {
         vendor/lib/hw/audio.usb.mt6785.so)
             "$PATCHELF" --replace-needed "libalsautils.so" "libalsautils-v30.so" "$2"
             ;;
+        vendor/lib/libmnl.so)
+            [ "$2" = "" ] && return 0
+            grep -q "libcutils.so" "${2}" || "${PATCHELF}" --add-needed "libcutils.so" "${2}"
+            ;;
         vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so)
             grep -q libshim_camera_metadata.so "$2" || "$PATCHELF" --add-needed libshim_camera_metadata.so "$2"
+            ;;
+        vendor/lib64/lib3a.flash.so)
+            [ "$2" = "" ] && return 0
+            grep -q "liblog.so" "${2}" || "${PATCHELF_0_17_2}" --add-needed "liblog.so" "${2}"
             ;;
         vendor/lib64/libmtkcam_stdutils.so)
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v30.so" "$2"
