@@ -1,23 +1,8 @@
 //
-// Copyright (C) 2023 The LineageOS Project
+// Copyright (C) 2023-2025 The LineageOS Project
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-
-cc_prebuilt_library_shared {
-	name: "libutils-v32",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["libutils-v32.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	vendor: true,
-}
 
 cc_prebuilt_library_shared {
 	name: "libutils-v30",
