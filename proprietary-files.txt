@@ -53,6 +53,7 @@
 -vendor/lib/libvowp25testing_alexa.vendor.so
 -vendor/lib/libvowp2training_alexa.vendor.so
 -vendor/lib/vendor.mediatek.hardware.audio@6.1.so
+-vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 
 # Audio (Configs)
 odm/etc/audio/audio_device/common/audio_device.xml
@@ -316,6 +317,7 @@ vendor/firmware/BT_FW.cfg
 # Camera
 -vendor/bin/hw/camerahalserver
 vendor/etc/init/camerahalserver.rc
+-vendor/lib/libJpgEncPipe.so
 -vendor/lib/libmtk_drvb.so
 -vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so
 -vendor/lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so
@@ -1439,6 +1441,8 @@ vendor/etc/mtk_omx_core.cfg
 -vendor/lib/libh264dec_se.ca7.so
 -vendor/lib/libh264enc_sa.ca7.so
 -vendor/lib/libhevce_sb.ca7.android.so
+-vendor/lib/libjpeg-alpha-oal_vendor.so
+-vendor/lib/libjpeg-alpha_vendor.so
 -vendor/lib/libmp4enc_sa.ca7.so
 -vendor/lib/libmp4enc_xa.ca7.so
 -vendor/lib/libstagefrighthw.so
@@ -1551,6 +1555,8 @@ vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
 -vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
 -vendor/lib/hw/vendor.mediatek.hardware.pq@2.6-impl.so
+-vendor/lib/libaal_mtk.so
+-vendor/lib/libaalservice.so
 -vendor/lib/libpq_cust_base.so
 -vendor/lib/libpq_prot.so
 -vendor/lib/librgbwlightsensor.so
@@ -1770,7 +1776,7 @@ system_ext/etc/init/init.vtservice.rc|50a2249906edc06059b443513db47a2ddc0490dc
 -system_ext/lib64/libmtk_vt_wrapper.so|af4d486c516c920ea99c362aebbf04180e96035c
 -system_ext/lib64/libsignal.so|0f55bb64c660fe4cda2b695121580b054f026e73
 -system_ext/lib64/libsink.so|6bd8c55847116a9a37e223ea2a6e5ce1379e53f7
--system_ext/lib64/libsource.so|66a481fd2e260a820899d60cf9190fb986d36768
+-system_ext/lib64/libsource.so|c4fa65eea73987da6d279fe89b8fec23ad2c0bf1|e216e5dedb880f8e3b54cbefaf50277dd6d92c39
 -system_ext/lib64/libvcodec_cap.so|6973253cb2e4ddf365451ed2ac8db9d04085bc4a
 -system_ext/lib64/libvcodec_capenc.so|5527525dfcd25169bc380ac53d8181ffa1429c6f
 -system_ext/lib64/libvt_avsync.so|632cb05532ef2e022072d91bff3c1ae47c888b7e
