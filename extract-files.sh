@@ -40,10 +40,6 @@ function blob_fixup {
         vendor/lib64/hw/vendor.mediatek.hardware.pq@2.6-impl.so)
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
             ;;
-        vendor/lib/mediadrm/libwvdrmengine.so | vendor/lib/libwvhidl.so)
-            [ "$2" = "" ] && return 0
-            grep -q libcrypto_shim.so "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
-            ;;
         vendor/lib/hw/audio.primary.mt6785.so)
             "$PATCHELF" --replace-needed "libmedia_helper.so" "libmedia_helper-v30.so" "$2"
             "$PATCHELF" --replace-needed "libalsautils.so" "libalsautils-v30.so" "$2"
@@ -80,9 +76,6 @@ function blob_fixup {
         vendor/lib/libaudio_param_parser-vnd.so)
             sed -i "s/\x00audio.tuning.def_path/\x00ro.vendor.tuning_path/" "$2"
             sed -i "s/\x20audio.tuning.def_path/\x20ro.vendor.tuning_path/" "$2"
-            ;;
-        vendor/lib/libwvhidl.so)
-            "$PATCHELF" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "$2"
             ;;
         vendor/bin/mnld|\
         vendor/lib*/libaalservice.so|\

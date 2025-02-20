@@ -1075,14 +1075,16 @@ vendor/etc/init/vendor.mediatek.hardware.dplanner@2.0-service.rc
 vendor/etc/vintf/manifest/vendor.mediatek.hardware.dplanner@2.0-service.xml
 -vendor/lib64/vendor.mediatek.hardware.dplanner@2.0.so
 
-# DRM (Widevine)
--odm/lib/liboemcrypto.so
--vendor/bin/hw/android.hardware.drm@1.3-service.widevine
-vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
--vendor/lib/mediadrm/libwvdrmengine.so
--vendor/lib/libtlcWidevineModularDrm.so
--vendor/lib/libwvhidl.so
+# DRM
+-odm/lib64/liboemcrypto.so
+-vendor/lib64/libtlcWidevineModularDrm.so
+
+# DRM - from RMX2156_11_F.17
+vendor/bin/hw/android.hardware.drm@1.4-service.widevine|8307cea32c20bdc6e7456a6060ebefcfe743b02c
+vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc|992f63e9700da29099e0590858a6becaaadb2976
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml|91d7c0996133556cb7f7c5d1b7e5d9e7f07b78b2
+vendor/lib64/mediadrm/libwvdrmengine.so|39cd63ebaea119805c6f713ed95907a92c40aa4d
+vendor/lib64/libwvhidl.so|9b7adc58292883e03f4b5fe00842c6832a506680
 
 # Dynamic FPS
 -vendor/bin/hw/vendor.mediatek.hardware.dfps@1.0-service
