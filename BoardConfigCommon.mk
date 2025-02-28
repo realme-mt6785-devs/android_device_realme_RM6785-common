@@ -133,7 +133,7 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 VENDOR_SECURITY_PATCH := 2022-05-05
 
 # Vibrator
-TARGET_VIBRATOR_SUPPORTS_EFFECTS := true
+$(call soong_config_set,mediatek_vibrator,supports_effects,true)
 
 # Wi-Fi
 WPA_SUPPLICANT_VERSION := VER_0_8_X
