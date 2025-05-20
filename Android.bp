@@ -5,3 +5,48 @@ soong_namespace {
         "vendor/realme/RM6785-common",
     ],
 }
+
+prebuilt_hidl_interfaces {
+    name: "hidl_pplagent_interface",
+    interfaces: [
+        "vendor.mediatek.hardware.pplagent@1.0::IPplAgent",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_mdmonitor_interface",
+    interfaces: [
+        "vendor.mediatek.hardware.mdmonitor@1.0::IMDMonitorService",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_atcid_interface",
+    interfaces: [   
+        "vendor.mediatek.hardware.atci@1.0::IAtcid",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_mtkcodecservice_interface",
+    interfaces: [
+        "vendor.mediatek.hardware.mtkcodecservice@1.1::IMtkCodecService",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_engineermode_interface",
+    interfaces: [
+        "vendor.mediatek.hardware.engineermode@1.0::IEmd",
+	"vendor.mediatek.hardware.engineermode@1.1::IEmd",
+        "vendor.mediatek.hardware.engineermode@1.2::IEmd",
+        "vendor.mediatek.hardware.engineermode@1.3::IEmd"
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_dplanner_interface",
+    interfaces: [
+        "vendor.mediatek.hardware.dplanner@2.0::IDPlanner",
+    ],
+}
