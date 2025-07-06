@@ -86,6 +86,10 @@ function blob_fixup {
         vendor/lib64/libcam.utils.sensorprovider.so)
             grep -q "android.hardware.sensors@1.0-convert-shared.so" "$2" || "$PATCHELF" --add-needed "android.hardware.sensors@1.0-convert-shared.so" "$2"
             ;;
+        system_ext/lib64/libimsma.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "libsink.so" "libsink-mtk.so" "${2}"
+            ;;
     esac
 }
 
