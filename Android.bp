@@ -21,13 +21,6 @@ prebuilt_hidl_interfaces {
 }
 
 prebuilt_hidl_interfaces {
-    name: "hidl_atcid_interface",
-    interfaces: [   
-        "vendor.mediatek.hardware.atci@1.0::IAtcid",
-    ],
-}
-
-prebuilt_hidl_interfaces {
     name: "hidl_mtkcodecservice_interface",
     interfaces: [
         "vendor.mediatek.hardware.mtkcodecservice@1.1::IMtkCodecService",

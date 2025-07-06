@@ -7,7 +7,6 @@
 -vendor/lib64/libladder.so
 
 # Audio
--vendor/bin/audiocmdservice_atci
 -vendor/lib/hw/audio.primary.mt6785.so
 -vendor/lib/hw/audio.r_submix.mt6785.so
 -vendor/lib/hw/audio.usb.mt6785.so
@@ -267,7 +266,6 @@ vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml
 vendor/etc/audio_param/Volume_AudioParam.xml
 vendor/etc/audio_param/Volume_ParamUnitDesc.xml
 vendor/etc/aurisys_param/Speech_AudioParam.xml
-vendor/etc/init/audiocmdservice_atci.rc
 vendor/etc/test_path/common/mixer_paths.xml
 vendor/etc/audio_device.xml
 vendor/etc/audio_em.xml
@@ -1696,11 +1694,6 @@ vendor/etc/init/ppl_agent.rc
 -vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 -vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 -vendor/lib64/vendor.mediatek.hardware.pplagent@1.0.so
-
-# Radio (ATCI)
--vendor/bin/atcid
-vendor/etc/init/atcid.rc
--vendor/lib64/vendor.mediatek.hardware.atci@1.0.so
 
 # Radio (Configs)
 vendor/etc/apdb/APDB_MT6785_S01__W2044

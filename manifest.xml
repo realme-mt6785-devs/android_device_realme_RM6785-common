@@ -175,15 +175,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.mediatek.hardware.atci</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IAtcid</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.mediatek.hardware.bluetooth.audio</name>
         <transport>hwbinder</transport>
         <version>2.1</version>
