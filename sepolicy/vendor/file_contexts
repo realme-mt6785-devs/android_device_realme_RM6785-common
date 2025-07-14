@@ -3,7 +3,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@[0-9]\.[0-9]-service\.RM6785    u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service.RM6785                                    u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.pixel-libperfmgr                         u:object_r:hal_power_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@[0-9]\.[0-9]-service\.RM6785                        u:object_r:hal_lineage_touch_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch-service\.RM6785                                     u:object_r:hal_lineage_touch_default_exec:s0
 
 # Devices
 /dev/pn553                                 u:object_r:nfc_device:s0

@@ -1,0 +1,25 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+soong_namespace {
+}
+
+cc_binary {
+    name: "vendor.lineage.touch-service.RM6785",
+    init_rc: ["vendor.lineage.touch-service.RM6785.rc"],
+    vintf_fragments: ["vendor.lineage.touch-service.RM6785.xml"],
+    relative_install_path: "hw",
+    srcs: [
+        "TouchscreenGesture.cpp",
+        "service.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "libutils",
+        "vendor.lineage.touch-V1-ndk",
+    ],
+    proprietary: true,
+}
